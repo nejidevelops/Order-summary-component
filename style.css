@@ -120,6 +120,8 @@ p {
 
 .checkout-buttons button:nth-child(1) {
   background-color: var(--bright-blue);
+  border-radius: 8px;
+  box-shadow: 2px 10px 10px var(--pale-blue);
 }
 
 .checkout-buttons button:nth-child(1) a {
