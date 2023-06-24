@@ -31,14 +31,81 @@ p {
   font-size: 16px;
 }
 
-.attribution {
+.card {
+  background: #fff;
+  width: min-content;
+  border-radius: 8px;
+  box-shadow: 2px 8px 2px 2px gray;
+}
+
+.card-image img {
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.card-content h1 {
+  font-weight: 900;
+  color: var(--dark-blue);
+}
+
+.card-content p {
+  color: var(--desaturated-blue);
+  font-weight: 500;
+}
+
+.card-content .content-paragraph {
+  margin: 0 2rem;
+  text-align: center;
+}
+
+.card-content .plan {
+  display: flex;
+  gap: 16px;
+  background-color: var(--very-pale-blue);
+  width: 320px;
+  padding: 12px 8px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-content .plan .info {
+  display: flex;
+  gap: 24px;
+}
+
+.card-content .info .info-text {
+  align-items: flex-start;
+}
+
+.card-content .plan button {
+  border: none;
+  background: transparent;
+  margin-right: 0.5rem;
+}
+
+.plan button a {
+  color: var(--bright-blue);
+  font-weight: 700;
+}
+
+/* .attribution {
   font-size: 11px;
   text-align: center;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
+} */
 
 @media (max-width: 768px) {
   body {
