@@ -87,6 +87,12 @@ p {
   align-items: flex-start;
 }
 
+.checkout-buttons button {
+  padding: 12px;
+  width: 200%;
+  border: none;
+}
+
 .card-content .plan button {
   border: none;
   background: transparent;
@@ -96,6 +102,36 @@ p {
 .plan button a {
   color: var(--bright-blue);
   font-weight: 700;
+}
+
+.checkout-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.checkout-buttons button a {
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.checkout-buttons button:nth-child(1) {
+  background-color: var(--bright-blue);
+}
+
+.checkout-buttons button:nth-child(1) a {
+  color: var(--very-pale-blue);
+}
+
+.checkout-buttons button:nth-child(2) {
+  background-color: transparent;
+}
+
+.checkout-buttons button:nth-child(2) a {
+  color: var(--desaturated-blue);
 }
 
 /* .attribution {
