@@ -17,9 +17,8 @@
 body {
   font-family: 'Red Hat Display', sans-serif;
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   background: url(./images/pattern-background-desktop.svg) no-repeat;
@@ -31,16 +30,13 @@ p {
   font-size: 16px;
 }
 
-.card {
-  background: #fff;
-  width: min-content;
-  border-radius: 8px;
-  box-shadow: 2px 8px 2px 2px gray;
+.attribution {
+  font-size: 11px;
+  text-align: center;
 }
 
-.card-image img {
-  overflow: hidden;
-  border-radius: 8px 8px 0 0;
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 .card-content {
@@ -63,7 +59,7 @@ p {
 }
 
 .card-content .content-paragraph {
-  margin: 0 2rem;
+  margin: 0 0.875rem;
   text-align: center;
 }
 
@@ -88,8 +84,9 @@ p {
 }
 
 .checkout-buttons button {
-  padding: 12px;
-  width: 200%;
+  cursor: pointer;
+  padding: 1.25rem 5rem;
+  width: 320px;
   border: none;
 }
 
@@ -136,17 +133,32 @@ p {
   color: var(--desaturated-blue);
 }
 
-/* .attribution {
-  font-size: 11px;
-  text-align: center;
+@media (min-width: 375px) {
+  body {
+    background: url(./images/pattern-background-mobile.svg) no-repeat;
+    background-size: contain;
+    background-color: var(--pale-blue);
+  }
+
+  .card {
+    background: #fff;
+    width: min-content;
+    border-radius: 8px;
+    box-shadow: none;
+  }
+
+  .card-image img {
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+    width: 24rem;
+  }
 }
 
-.attribution a {
-  color: hsl(228, 45%, 44%);
-} */
-
-@media (max-width: 768px) {
-  body {
-    background: url(./images/pattern-background-mobile.svg) no-repeat contain;
+@media (min-width: 768px) {
+  .card {
+    background: #fff;
+    width: min-content;
+    border-radius: 8px;
+    box-shadow: 2px 8px 2px 2px gray;
   }
 }
